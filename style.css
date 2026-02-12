@@ -1,3 +1,8 @@
+*{
+    margin: 2px;
+    box-sizing: border-box;
+}
+
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -15,6 +20,12 @@
     margin: 5px 0px 5px 0px;
 }
  
+.div1 {
+     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .div2 {
     display: flex;
     justify-content: center;
@@ -60,6 +71,7 @@ img {
     flex-direction: column ;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 .div13 {
@@ -68,4 +80,18 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 1024px) {
+
+  .parent2 {
+    grid-template-columns: 1fr;
+  }
+
+  .div11 { order: 1; }
+  .div12 { order: 2; }
+  .div14 { order: 3; }
+  .div13 { order: 4; }
+
 }
